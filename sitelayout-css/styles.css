@@ -65,13 +65,14 @@ body {
     height: fit-content !important;
   }
 
-  .hero-title {
+  .hero-title, .section-title {
     font-size: 35px !important;
   }
 
   .heroSection .btn {
     width: 100% !important;
   }
+
 }
 
 .hero-title,
@@ -80,6 +81,8 @@ body {
   color: var(--secondary-color);
   font-size: 50px;
 }
+
+
 
 .hero-subtitle {
   font-family: "Pacifico";
@@ -93,4 +96,24 @@ body {
 .why-choose-us .section-text {
   font-size: 18px;
   font-family: var(--secondary-font);
+}
+
+.carousel-indicators {
+  width: 120px;
+  position: relative;
+  bottom: -50px !important;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 15px;
+  height: 15px;
+  border-radius: 4px;
+  background-color: #e0e0e0;
+  margin: 0 4px;
+  transition: background 0.3s, width 0.3s;
+  border: none;
+}
+.carousel-indicators .active {
+  background-color: #4a90e2;
+  width: 40px;
 }
