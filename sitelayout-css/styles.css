@@ -87,8 +87,7 @@ body {
 }
 
 .section-subtitle {
-  font-family: var(--secondary-font);
-  color: #4a90e2;
+  font-family: var(--heading-font);
 }
 
 .why-choose-us .section-text {
@@ -117,7 +116,7 @@ body {
 }
 
 .btn-primary {
-  background-color: var(--primary-color) !important;
+  background-color: var(--secondary-color) !important;
   color: #fff;
   padding: 5px 30px;
   font-weight: 500;
