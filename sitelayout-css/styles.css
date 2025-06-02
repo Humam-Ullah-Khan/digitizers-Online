@@ -244,3 +244,59 @@ body {
   font-size: 16px;
   color: #000;
 }
+
+.faq-heading {
+  font-family: var(--heading-font);
+  font-weight: 700;
+}
+.faq-question {
+  font-family: var(--secondary-font);
+  font-size: 17px;
+  color: #222;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.faq-answer {
+  font-family: var(--secondary-font);
+  color: #444;
+  font-size: 15px;
+}
+@media (max-width: 767.98px) {
+  .faq-section {
+    padding: 20px 5px;
+  }
+  .faq-item {
+    padding: 16px 10px;
+  }
+}
+
+.footer-section {
+  background: #92c4feed;
+  font-family: var(--secondary-font);
+}
+.footer-section .footer-links li {
+  margin-bottom: 6px;
+}
+.footer-section .footer-links a {
+  color: #222;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.footer-section .footer-links a:hover {
+  color: #ffffff;
+}
+.footer-section .carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 0 3px;
+  border: none;
+
+}
+.footer-section .carousel-indicators .active {
+  background: #4a90e2;
+}
+.footer-section .carousel-control-prev-icon,
+.footer-section .carousel-control-next-icon {
+  background-size: 60% 60%;
+}
