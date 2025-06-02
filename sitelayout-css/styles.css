@@ -61,7 +61,7 @@ body {
 @media (max-width: 767.98px) {
   .heroSection .container {
     background-image: none !important;
-    background-color: #0E191F !important;
+    background-color: #0e191f !important;
     height: fit-content !important;
   }
 
@@ -122,7 +122,6 @@ body {
   font-weight: 500;
 }
 
-
 .custom-services .section-text {
   font-size: 16px;
   color: #000;
@@ -139,5 +138,68 @@ body {
   .placing-order .card img {
     width: 100% !important;
     height: auto !important;
+  }
+}
+
+.sample-img-wrap {
+  cursor: pointer;
+  min-height: 180px;
+  background: #eee;
+  position: relative;
+  overflow: hidden;
+}
+.sample-img-overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 0;
+  background-image: linear-gradient(
+    to bottom,
+    #a9b5ce,
+    #9eb1d5,
+    #91aedb,
+    #82abe2,
+    #70a8e8
+  );
+  opacity: 0;
+  transition: height 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--secondary-font);
+}
+.sample-img-wrap:hover .sample-img-overlay {
+  height: 100%;
+  opacity: 1;
+}
+.sample-img-overlay span {
+  text-shadow: 0 2px 8px #000;
+  transition: opacity 0.2s;
+  opacity: 0;
+  text-transform: uppercase;
+}
+.sample-img-wrap:hover .sample-img-overlay span {
+  opacity: 1;
+}
+
+.sample-img-title,
+.sample-title {
+  display: none;
+}
+
+@media (max-width: 767.98px) {
+  .sample-img-overlay {
+    display: none !important;
+  }
+  .sample-title {
+    display: block;
+    color: #222;
+    font-size: 1rem;
+    font-family: var(--secondary-font);
+    text-shadow: none;
+    margin-bottom: 10px;
+    margin-top: 8px;
+    text-transform: uppercase;
   }
 }
