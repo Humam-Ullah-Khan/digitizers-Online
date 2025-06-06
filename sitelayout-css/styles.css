@@ -73,6 +73,23 @@ body {
   .heroSection .btn {
     width: 100% !important;
   }
+
+  .navbar .navbar-nav {
+    position: absolute !important;
+    top: 70px;
+    background-color: #fff;
+    width: 50% !important;
+    max-width: 100% !important;
+    padding: 20px;
+    right: 20px;
+    border-radius: 12px;
+  }
+
+  .navbar-nav .dropdown .dropdown-menu {
+    position: absolute !important;
+    width: fit-content;
+    left: -100% !important;
+  }
 }
 
 .hero-title,
@@ -291,12 +308,33 @@ body {
   border-radius: 50%;
   margin: 0 3px;
   border: none;
+  background-color: #ddd;
+}
 
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  width: 48px;
+  height: 48px;
+  background-size: 70% 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #000 !important;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
-.footer-section .carousel-indicators .active {
-  background: #4a90e2;
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+  background-color: var(--secondary-color);
+  transform: scale(1.05);
 }
-.footer-section .carousel-control-prev-icon,
-.footer-section .carousel-control-next-icon {
-  background-size: 60% 60%;
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.5 0L4.8.7 1.5 4l3.3 3.3.7.7L7 4 5.5 0z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.5 0L1.8.7 5.1 4l-3.3 3.3.7.7L6 4 2.5 0z'/%3E%3C/svg%3E");
 }
